@@ -6,9 +6,9 @@ The increasing popularity of QR codes has led to their extensive use in various 
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://i.imgur.com/lu8LXHv.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://i.imgur.com/7ra4n3e.png)
 
 
 ## Authors
