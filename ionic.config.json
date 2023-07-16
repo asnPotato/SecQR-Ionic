@@ -1,0 +1,7 @@
+{
+  "name": "SecQR",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
