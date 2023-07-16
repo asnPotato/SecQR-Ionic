@@ -10,9 +10,9 @@
 
 ## Screenshots
 
-![App Screenshot](https://i.imgur.com/lu8LXHv.png)
+![App Screenshot](https://i.imgur.com/Y47Ey1L.png)
 
-![App Screenshot](https://i.imgur.com/7ra4n3e.png)
+![App Screenshot](https://i.imgur.com/vOHv6U2.png)
 
 
 ## Authors
