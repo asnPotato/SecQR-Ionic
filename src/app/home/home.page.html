@@ -1,22 +1,22 @@
-
 <ion-content>
-  <section >
-    <div class="logo-container  ">
-      <img src="https://i.imgur.com/FveOhBe.png" class="logo">
+  <section>
+    <div class="logo-container">
+      <img src="https://i.imgur.com/FveOhBe.png" class="logo" />
     </div>
     <div class="circle"></div>
     <div class="content">
       <div class="textBox">
         <h2>SecQR</h2>
         <p>
-          Multiple techniques have been developed, including dynamic QR codes. Dynamic QR codes are generated dynamically and edited or altered after 
-          their creation; this gives greater flexibility and security as the code can be updated or deleted if compromised, though dynamic QR codes 
-          still may be vulnerable to attacks such as spoofing and data theft. To address this issue, our project proposes strengthening the security 
-          of Quick Response codes through visual watermarking and image steganography techniques. By adding additional protective measures to QR codes, 
-          our project aims to prevent unwanted manipulation while guaranteeing their authenticity, thus mitigating risks related to spoofing and data theft.
+          SecQR is here to provide you with an advanced and reliable solution.
+          Our network-based QR code security tool harnesses the power of visual
+          watermarking and image steganography techniques to ensure the utmost
+          protection for your encoded information..
         </p>
-        <br>
-        <ion-button class="get-started-button" expand="block">Get Started</ion-button>
+        <br />
+        <ion-button class="get-started-button" expand="block"
+          >Get Started</ion-button
+        >
       </div>
       <div class="imgBox">
         <img src="https://i.imgur.com/mKK4QTY.png" class="logo" />
@@ -27,17 +27,18 @@
     </ul>
   </section>
 
-  
   <ion-grid class="ion-no-padding">
     <ion-row>
       <ion-col size="12">
-        <div style="width: 50%; margin: 0 auto;">
+        <div style="width: 50%; margin: 0 auto">
           <br />
           <div class="upload">
-            <ion-label class="h2">SecQR<br></ion-label>
-            <ion-label>QR Code generator that secures your QR Code with<br>
-              Visual Watermarking and Image Steganography<br /></ion-label>
-              <br>
+            <ion-label class="h2">SecQR<br /></ion-label>
+            <ion-label
+              >QR Code generator that secures your QR Code with<br />
+              Visual Watermarking and Image Steganography<br
+            /></ion-label>
+            <br />
             <ion-label>Image File (Optional):</ion-label>
             <input type="file" id="imageLoader" name="imageLoader" />
           </div>
@@ -45,14 +46,12 @@
           <div class="center">
             <canvas id="imageCanvas"></canvas>
           </div>
-          
 
           <div class="center">
             <ion-button color="primary" onclick="makeCode()">Scan</ion-button>
           </div>
 
           <br />
-
 
           <ion-item>
             <ion-label position="floating">URL*</ion-label>
@@ -63,15 +62,25 @@
 
           <div class="tooltip">
             Bit size:
-            <span class="tooltiptext">Larger sizes hide more of the image, but are easier to scan. I found that a size of 30
-              works well.</span>
+            <span class="tooltiptext"
+              >Larger sizes hide more of the image, but are easier to scan. I
+              found that a size of 30 works well.</span
+            >
             <span id="printSize"></span>
           </div>
 
           <br /><br />
 
           <ion-item>
-            <ion-range min="10" max="100" step="1" snaps="true" value="30" pin="true" color="primary" id="radiusSize">
+            <ion-range
+              min="10"
+              max="100"
+              step="1"
+              snaps="true"
+              value="30"
+              pin="true"
+              color="primary"
+              id="radiusSize">
             </ion-range>
           </ion-item>
 
@@ -79,15 +88,26 @@
 
           <div class="tooltip">
             Error Correction:
-            <span class="tooltiptext">Higher level of error correction makes bigger QR codes, but also allows you to hide
-              more of the QR code. The former is more relevant to this app.</span>
+            <span class="tooltiptext"
+              >Higher level of error correction makes bigger QR codes, but also
+              allows you to hide more of the QR code. The former is more
+              relevant to this app.</span
+            >
             <span id="printCorrection"></span>
           </div>
 
           <br /><br />
 
           <ion-item>
-            <ion-range min="1" max="3" step="1" snaps="true" value="3" pin="true" color="primary" id="errorCorrection">
+            <ion-range
+              min="1"
+              max="3"
+              step="1"
+              snaps="true"
+              value="3"
+              pin="true"
+              color="primary"
+              id="errorCorrection">
             </ion-range>
           </ion-item>
 
@@ -95,15 +115,26 @@
 
           <div class="tooltip">
             Border Size:
-            <span class="tooltiptext">Size of white border around QR code. Typically need some border around the code, but
-              depending on your use case you can get rid of it.</span>
+            <span class="tooltiptext"
+              >Size of white border around QR code. Typically need some border
+              around the code, but depending on your use case you can get rid of
+              it.</span
+            >
             <span id="printBorderSize"></span>
           </div>
 
           <br /><br />
 
           <ion-item>
-            <ion-range min="0" max="5" step="1" snaps="true" value="0" pin="true" color="primary" id="borderSize">
+            <ion-range
+              min="0"
+              max="5"
+              step="1"
+              snaps="true"
+              value="0"
+              pin="true"
+              color="primary"
+              id="borderSize">
             </ion-range>
           </ion-item>
 
@@ -111,26 +142,31 @@
 
           <ion-item>
             <ion-label>White background</ion-label>
-            <ion-checkbox slot="start" id="whitebackground" name="whitebackground"></ion-checkbox>
+            <ion-checkbox
+              slot="start"
+              id="whitebackground"
+              name="whitebackground"></ion-checkbox>
           </ion-item>
 
           <br />
 
           <div class="center">
-            <ion-button expand="block" color="primary" onclick="makeCode()">Generate</ion-button>
+            <ion-button expand="block" color="primary" onclick="makeCode()"
+              >Generate</ion-button
+            >
           </div>
 
           <br />
-
 
           <br />
 
           <div class="center">
-            <ion-button expand="block" color="primary" onclick="download()">Download PNG</ion-button>
+            <ion-button expand="block" color="primary" onclick="download()"
+              >Download PNG</ion-button
+            >
           </div>
 
           <br />
-          
         </div>
       </ion-col>
     </ion-row>
